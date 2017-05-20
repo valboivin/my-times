@@ -15,6 +15,7 @@ header {
   color: MediumAquamarine;
   display: flex;
   align-items: center;
+  width: 200px;
 }
 
 .logo span{
@@ -24,7 +25,6 @@ header {
 nav {
   padding: 10px 30px;
   flex-direction: row;
-  list-style-type: none;
 }
 
 nav li {
@@ -35,8 +35,4 @@ nav li {
 
 nav a {
   color: black;
-}
-
-.logo span {
-  align-items: center;
 }
