@@ -9,13 +9,14 @@ header {
   font-weight: bold;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .logo {
   color: MediumAquamarine;
   display: flex;
   align-items: center;
-  width: 200px;
+  width: 250px;
 }
 
 .logo span{
@@ -35,4 +36,46 @@ nav li {
 
 nav a {
   color: black;
+}
+
+div {
+  border: 1px solid blue;
+  display: flex;
+}
+
+article {
+  border: 1px solid red;
+}
+main {
+  display: flex;
+  position: absolute;
+  margin-top: 110px;
+}
+
+.column.large {
+  width: 630px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.column.medium {
+  width: 300px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.column.small {
+  width: 240px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+article p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.image-content {
+  background-image: url(./resources/images/img-story-1.png);
 }
