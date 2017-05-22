@@ -42,16 +42,8 @@ nav a {
   color: black;
 }
 
-div {
-  border: 1px solid blue;
-  display: flex;
-}
 
-article {
-  border: 1px solid red;
-}
-
-/* Style for the Main part */
+/* Style for the Main part: structure and positioning */
 
 main {
   display: flex;
@@ -66,6 +58,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-right: 30px;
 }
 
 .stories {
@@ -82,13 +75,14 @@ main {
   width: 300px;
   display: flex;
   flex-flow: column wrap;
+  margin-right: 30px; 
 
 }
 
 .column.small {
   width: 240px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
 
 }
 
@@ -112,6 +106,21 @@ article p {
 .lead-story .above-img {
   font-size: 40px;
   text-align: left;
+}
+
+.location {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Adding images to the stories */
@@ -138,4 +147,21 @@ article p {
 .story3 .image-content {
   background-image: url("../images/img-story-3.png");
   display: flex;
+}
+
+/* Style for the third column's elements */
+
+.news-bites ul{
+  margin: 0;
+  padding: 0;
+}
+
+.news-bites li{
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  list-style-type: none;
+  padding: 10px;
+  border-bottom: 1px solid black;
 }
