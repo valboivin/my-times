@@ -1,8 +1,12 @@
+/* Style for the Menu/Header */
+
 header {
   display: flex;
   position: fixed;
   height: 75px;
   width: 100%;
+  background-color: white;
+  margin-top: 0px;
   border-bottom: 1px solid black;
   font-family: Verdana, serif;
   font-size: 14px;
@@ -46,29 +50,50 @@ div {
 article {
   border: 1px solid red;
 }
+
+/* Style for the Main part */
+
 main {
   display: flex;
   position: absolute;
   margin-top: 110px;
+  justify-content: space-between;
 }
 
 .column.large {
   width: 630px;
   display: flex;
-  flex-flow: column wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.stories {
+  flex-flow: column wrap;
+  width: 300px;
+}
+
+.short-story {
+  height: 200px;
+}
+
 
 .column.medium {
   width: 300px;
   display: flex;
   flex-flow: column wrap;
+
 }
 
 .column.small {
   width: 240px;
   display: flex;
   flex-flow: column wrap;
+
 }
+
+/* Styling text */
+
 
 article p {
   font-family: Georgia;
@@ -76,6 +101,41 @@ article p {
   color: black;
 }
 
+.above-img {
+ font-family: Georgia;
+ font-weight: bold;
+ font-size: 30px;
+ color: white;
+ text-align: center;
+}
+
+.lead-story .above-img {
+  font-size: 40px;
+  text-align: left;
+}
+
+/* Adding images to the stories */
+
 .image-content {
-  background-image: url(./resources/images/img-story-1.png);
+  height: 300px;
+}
+
+.lead-story .image-content {
+  background-image: url("../images/img-story-main.png");
+  display: flex;
+}
+
+.story1 .image-content {
+  background-image: url("../images/img-story-1.png");
+  display: flex;
+}
+
+.story2 .image-content {
+  background-image: url("../images/img-story-2.png");
+  display: flex;
+}
+
+.story3 .image-content {
+  background-image: url("../images/img-story-3.png");
+  display: flex;
 }
