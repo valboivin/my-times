@@ -28,7 +28,7 @@ header {
   padding: 0px 10px;
 }
 
-nav {
+header nav {
   padding: 10px 30px;
   flex-direction: row;
 }
@@ -48,7 +48,7 @@ nav a {
 
 main {
   display: flex;
-  margin-top: 110px;
+  margin: 110px 0 70px 0;
   justify-content: space-between;
 }
 
@@ -106,6 +106,7 @@ article p {
 .lead-story .above-img {
   font-size: 40px;
   text-align: left;
+  padding: 0 20px;
 }
 
 .location {
@@ -127,26 +128,24 @@ h3 {
 
 .image-content {
   height: 300px;
+  display: flex;
+  align-items: center;
 }
 
 .lead-story .image-content {
   background-image: url("../images/img-story-main.png");
-  display: flex;
 }
 
 .story1 .image-content {
   background-image: url("../images/img-story-1.png");
-  display: flex;
 }
 
 .story2 .image-content {
   background-image: url("../images/img-story-2.png");
-  display: flex;
 }
 
 .story3 .image-content {
   background-image: url("../images/img-story-3.png");
-  display: flex;
 }
 
 /* Style for the third column's elements */
@@ -169,7 +168,32 @@ h3 {
 /* Style for the footer */
 
 footer {
-  display: flex
-  position: absolute;
-  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
 }
+
+footer div {
+  display: flex;
+  align-items: center;
+}
+
+footer span {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 25px;
+  }
+
+footer ul {
+    margin: 0;
+    padding: 0 0 0 25px;
+  }
